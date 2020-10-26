@@ -7,9 +7,11 @@ public class Main15 {
 
         Step commonResource= new Step();
         System.out.println("Started ");
+
         for (int i = 1; i < 3; i++){
 
             Thread a = new Thread(new First(commonResource));
+
             a.setName("Thead " + i );
 
             a.start();
